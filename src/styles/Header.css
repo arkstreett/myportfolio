@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.header__img {
+  height: 120px;
+  animation: App-logo-spin infinite 5s linear;
+  transition: 5s;
+}
+
+@keyframes App-logo-spin {
+  20% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__nav {
+  padding-right: 80px;
+  padding-bottom: 10px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  transition: 1s;
+  font-family: "Changa", sans-serif;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* .header__nav a:hover {
+  color: #957397;
+  transition: 0.5s;
+} */
+
+.header__links:hover {
+  color: #957397;
+  transition: 0.2s;
+}
+
+.header__links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #957397;
+  transition: width 0.3s;
+}
+
+.header__links:hover::after {
+  width: 100%;
+  transition: width;
+}
+
+.header__links:active {
+  color: #be93c0;
+}

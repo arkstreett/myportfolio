@@ -1,0 +1,18 @@
+/* .home-page {
+} */
+
+.banner {
+  padding-top: 150px;
+  padding-right: 80px;
+  padding-left: 45px;
+}
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.typical {
+  margin-top: 10px;
+  font-family: "Changa", sans-serif;
+  font-size: 1.4rem;
+}
