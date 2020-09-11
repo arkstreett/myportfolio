@@ -3,3 +3,11 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.resume button {
+    border: 2px solid black;
+    font-family: "Changa" ;
+    font-size: 2.3rem;
+    padding: 5px 50px;
+    float: right;
+}
