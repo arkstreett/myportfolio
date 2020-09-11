@@ -37,6 +37,7 @@
   display: inline-block;
   font-size: 1.4rem;
   font-style: italic;
+  text-shadow: 2px 2px lightgray
 }
 
 /* .header__nav a:hover {

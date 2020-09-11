@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 function Header() {
   return (
     <header className="header">
-      <motion.img src={KagneIMG} className="header__img" />
+      <Link to="/"><motion.img src={KagneIMG} className="header__img" /></Link>
 
       <div className="header__nav">
-        <Link>
+        <Link to="/resume">
           <a className="header__links">Resume</a>
         </Link>
 

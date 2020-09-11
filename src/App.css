@@ -1,4 +1,16 @@
 .app {
-  width: 93%;
+  max-width: 93%;
   margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: white
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
 }
