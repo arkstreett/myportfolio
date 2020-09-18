@@ -1,0 +1,25 @@
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-cards div {
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1000px) {
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .project-cards div {
+        margin-bottom: 20px;
+    }
+}
+
+.project-buttons a {
+    color:  #957397;
+}

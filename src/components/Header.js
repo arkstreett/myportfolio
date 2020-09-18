@@ -15,6 +15,10 @@ function Header() {
           <a className="header__links">Resume</a>
         </Link>
 
+        <Link to="/projects">
+          <a className="header__links">Projects</a>
+        </Link>
+
         <Link>
           <a className="header__links">Get In Touch </a>
         </Link>
