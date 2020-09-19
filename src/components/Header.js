@@ -19,7 +19,7 @@ function Header() {
           <a className="header__links">Projects</a>
         </Link>
 
-        <Link>
+        <Link to="/contact">
           <a className="header__links">Get In Touch </a>
         </Link>
       </div>
