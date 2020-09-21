@@ -17,3 +17,13 @@
   font-family: "Changa", sans-serif;
   font-size: 1.4rem;
 }
+
+@media (max-width: 500px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .typical {
+    font-size: 1rem;
+  }
+}

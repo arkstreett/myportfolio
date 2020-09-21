@@ -1,7 +1,8 @@
 .contact-page {
     text-align: center;
     margin-top: 100px;
-    height: 100vh;
+    height: 761px;
+    padding-bottom: 10px;
 }
 
 .contact-page div {
@@ -13,10 +14,13 @@
     height: 30px;
     margin-top: 5px;
     transition: 1s;
+    /* border:  1px solid black; */
+    padding: 0px 5px;
+    font-family: 'Noto Sans';
 }
 
-.contact-page input:hover {
-    border:  3px solid #B55267;
+.contact-page input:active {
+    border:  1px solid #B55267;
     transition: 1s;
 }
 
@@ -24,12 +28,55 @@
     height: 70px;
     margin-top: 6px;
     width: 400px;
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    padding: 0px 5px;
+}
+
+.phone-number {
+    float: right;
+    margin-right: 20px;
+}
+
+.phone-number a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.phone-number a:active {
+    color: limegreen;
+}
+
+.phone-number h3 {
+    margin-left: 10px;
+    font-family: "Changa";
+    letter-spacing: .5px;
 }
 
 .contact-page button {
-    background-color: lightgrey ;
+    margin-bottom: 250px;
 }
 
 .contact-page button:hover {
     background: #B55267;
 }
+
+.email-address a {
+    display: flex;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.email-address h3{
+    color: black;
+    margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+    .contact-page textarea {
+        width: 300px;
+        font-size: 1rem;
+    }
+}
+

@@ -14,7 +14,7 @@ function Resume() {
         <img src={Resume2}/>
         
         <a href="https://drive.google.com/file/d/1cc7_gMTGCky6S5hqEuKZQypN00FV_Q5b/view?usp=sharing" rel="noopener noreferrer" target="_blank" download><Button variant="contained" color="primary" disableElevation>
-  Download PDF.
+  Download <a className="pdf"> PDF.</a>
       </Button>
       </a>
         </div>

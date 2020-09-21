@@ -17,7 +17,7 @@
 
 .project-cards div {
     margin: 0 auto;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 
 }
 
@@ -39,4 +39,12 @@
 
 .project-buttons a {
     color:  #957397;
+}
+
+
+@media (max-width: 500px) {
+    .project-cards {
+        width: 320px;
+        margin: 0 auto
+    }
 }

@@ -17,6 +17,7 @@ import MadMax from "../images/madmax.jpg"
 import NetflixHD from "../images/Netflixwallpaper.jpg"
 import Garden from "../images/gardenwallpaper.jpg"
 import WhatsApp from "../images/whatsappimage.jpg"
+import ComingSoon from "../images/coming-soon.png"
 
 
 const useStyles = makeStyles({
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
     },
     media: {
       height: 140,
+      padding: 10
     },
   });
 
@@ -57,7 +59,7 @@ function Projects() {
         <div className="project-cards">
             
             <div>
-            <Trans {...fadeIn(1, 1000)}>
+            
             <Card className={classes.root}>
                 <a href="https://madattheworld.netlify.app/" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><CardActionArea>
                     <CardMedia
@@ -84,7 +86,7 @@ function Projects() {
                     </a>
                 </CardActions>
             </Card>
-            </Trans>
+    
             </div>
     
 
@@ -146,7 +148,7 @@ function Projects() {
 
             <div>
             <Card className={classes.root}>
-                <a href="https://madattheworld.netlify.app/" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><CardActionArea>
+                <a href="https://mywhatsappclone.netlify.app/" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><CardActionArea>
                     <CardMedia
                     className={classes.media}
                     image={WhatsApp}
@@ -156,7 +158,7 @@ function Projects() {
                         WhatsApp Clone
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        For this project I decided to use MERN stack to show employers that I could build real time apps with Relational Database Management Systems. I created a WhatsApp look alike using Material-UI, and used my design capabilities to create "sent" and "received" messages that ran on a Node.js server. Everytime you send a message it sends the time you sent it and what allows the app to run real time is by the use of a 3rd party module called Pusher and our database MongoDB. I'm still currently adding features to this app.
+                        For this project I decided to use MERN stack to show employers that I could build real time apps with Relational Database Management Systems. I created a WhatsApp look alike using Material-UI, and used my design capabilities to create "sent" and "received" messages that ran on a Node.js server. Everytime you send a message it sends the time you sent it and what allows the app to run real time is by the use of a 3rd party module called Pusher and for my database MongoDB. I'm still currently adding features to this app for fun.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -175,6 +177,37 @@ function Projects() {
             </Card>
             </div>
             
+
+            <div>
+            <Card className={classes.root}>
+                <a href="https://newcomingsoontemplate.netlify.app/" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><CardActionArea>
+                    <CardMedia
+                    className={classes.media}
+                    image={ComingSoon}
+                    />
+                    <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2" style={{ fontFamily: "Changa", color: "black"}}>
+                        Coming Soon Page
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        I love this project, it gives all e-commerce or business sites time to release, renovate and promote new drops before the release date. I sparked this idea from my favorite street wear shop Supreme and every year before a new season dropped they would allow you to sign up for notifications that notified you before open so that you could be first available to their stock. In this project I used MailChimp API as my back end in a Node.js and Express app. This allows you to be able to send your email to a 3rd party API and it then takes the email and adds it to your subscriber list and from there you can manage it from MailChimps website. (backend is disabled because of free MailChimpAPI acc.)
+                    </Typography>
+                    </CardContent>
+                </CardActionArea>
+                </a>
+                <CardActions>
+                    <a href="https://github.com/arkstreett/comingsoon-backend" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><Button size="small" color="secondary" >
+                    GitHub
+                    </Button></a>
+                    
+                    <a href="https://drive.google.com/file/d/1ZTvfBH7ShQVRpGtu2fKYHXaXTi-R0v-0/view?usp=sharing" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><Button size="small" color="secondary">
+                    LIVE DEMO
+                    </Button>
+                    </a>
+                    
+                </CardActions>
+            </Card>
+            </div>
         </div>
     </div>
   );

@@ -3,6 +3,8 @@ import "../styles/Contact.css";
 import emailjs  from "emailjs-com";
 import Button from '@material-ui/core/Button';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import CallIcon from '@material-ui/icons/Call';
+import MailIcon from '@material-ui/icons/Mail';
 
 const Trans = ReactCSSTransitionGroup;
 
@@ -69,6 +71,14 @@ function Contact() {
               </Button>
             </div>
          </form>
+
+         <div className="phone-number">
+           <a href="tel:302-772-8946"><CallIcon style={{color: "limegreen"}}/><h3>(302)-772-8946</h3></a>
+         </div>
+
+         <div className="email-address">
+            <a href="mailto:arjstreett@gmail.com"><MailIcon style={{ color: "#B55267"}}/><h3>arjstreett@gmail.com</h3></a>
+         </div>
      </div>
 
     );
