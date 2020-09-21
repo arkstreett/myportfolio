@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../styles/Projects.css"
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 // MATERIAL UI
 import { makeStyles } from '@material-ui/core/styles';
@@ -26,7 +27,22 @@ const useStyles = makeStyles({
       height: 140,
     },
   });
-  
+
+
+const Trans = ReactCSSTransitionGroup;
+
+const fadeIn = (n, timeoutLength) => {
+    return {
+        transitionName: `fadeIn${n}`,
+        transitionEnterTimeout: 0,
+        transitionAppear: true,
+        transitionAppearTimeout: timeoutLength,
+        transitionLeave: true,
+        transitionLeaveTimeout: 500
+    }
+}
+
+
 
 function Projects() {
   const classes = useStyles();
@@ -39,7 +55,9 @@ function Projects() {
 
     <div className="projects-page">
         <div className="project-cards">
+            
             <div>
+            <Trans {...fadeIn(1, 1000)}>
             <Card className={classes.root}>
                 <a href="https://madattheworld.netlify.app/" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><CardActionArea>
                     <CardMedia
@@ -66,7 +84,9 @@ function Projects() {
                     </a>
                 </CardActions>
             </Card>
+            </Trans>
             </div>
+    
 
             <div>
             <Card className={classes.root}>
@@ -108,7 +128,7 @@ function Projects() {
                         Water My Plants App
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    In this project I show that I can perform CRUD operations with a 3rd party API. The API gives a variety of plant species informing the user when to water them, plant species, and a option to upload, update or delete a plant off your list. But what really ties this project together to me is the fact that you have to be a authenticated user (logged in), in order to view your list of plants and you will be redirected to the homepage if not a user.
+                    In this project I show that I can perform CRUD operations with a 3rd party API. The API gives a variety of plant species informing the user when to water them, upcoming species, and a option to upload, update or delete a plant off your list. But what really ties this project together to me is the fact that you have to be a authenticated user (logged in), in order to view your list of plants and you will be redirected to the homepage if not a user.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -136,7 +156,7 @@ function Projects() {
                         WhatsApp Clone
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        This project displays a fully functional CRUD App that I created using React, Redux and Node.js / Express. With this app my client wanted me to build him something that would allow him to sell his products and just upload them when he felt necessary, I even made him a client private upload server for his art. You can add items to the cart, delete, and increase / decrease the quantity of and item. My favorite part of this build was implementing Stripe.js so my client could recieve payments from the just an app on his phone. Stripe allows a person to recieve, refund and check statements for free and I personally love it. (#. 4242 4242 4242  / Any Date in the future)
+                        For this project I decided to use MERN stack to show employers that I could build real time apps with Relational Database Management Systems. I created a WhatsApp look alike using Material-UI, and used my design capabilities to create "sent" and "received" messages that ran on a Node.js server. Everytime you send a message it sends the time you sent it and what allows the app to run real time is by the use of a 3rd party module called Pusher and our database MongoDB. I'm still currently adding features to this app.
                     </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -145,10 +165,12 @@ function Projects() {
                     <a href="https://github.com/arkstreett/madattheworld" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><Button size="small" color="secondary" >
                     GitHub
                     </Button></a>
+                    
                     <a href="https://drive.google.com/file/d/1BoyPLtvKq1MHSS-0tuO7hdQqguFY9Nm9/view?usp=sharing" rel="noreferrer nopener" target="_blank" style={{ textDecoration: "none"}}><Button size="small" color="secondary">
                     LIVE DEMO
                     </Button>
                     </a>
+                    
                 </CardActions>
             </Card>
             </div>

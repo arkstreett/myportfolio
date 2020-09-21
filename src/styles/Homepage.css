@@ -1,5 +1,6 @@
-/* .home-page {
-} */
+.home-page {
+  height: 100vh;
+}
 
 .banner {
   padding-top: 150px;
@@ -8,7 +9,7 @@
 }
 
 .banner h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .typical {

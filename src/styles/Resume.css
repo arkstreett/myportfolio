@@ -1,25 +1,31 @@
+.resume {
+    height: 100%;
+
+}
+
 .resume__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .resume button {
     border: 1px solid black;
     font-family: "Changa" ;
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 5px 50px;
     float: right;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     background: lightgrey;
     outline: none;
     transition: .5s;
+    margin-right: 70px;
+    margin-top: 30px;
 }
 
 .resume button:hover {
-    background: #957397;
-    color: white;
-    border: 1.8px solid black;
-    transition: .5s;
-    font-size: 2.5rem;
+    background: #B55267;
 }

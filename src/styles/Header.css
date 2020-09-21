@@ -1,14 +1,13 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
+  padding-bottom: 20px;
 }
 
 .header__img {
-  height: 120px;
+  height: 80px;
   animation: App-logo-spin infinite 5s linear;
   transition: 5s;
+  padding-top: 10px;
+  object-fit: contain;
 }
 
 @keyframes App-logo-spin {

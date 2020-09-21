@@ -1,0 +1,35 @@
+.contact-page {
+    text-align: center;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.contact-page div {
+    margin-top: 20px;
+    font-family: "Changa";
+}
+
+.contact-page input {
+    height: 30px;
+    margin-top: 5px;
+    transition: 1s;
+}
+
+.contact-page input:hover {
+    border:  3px solid #B55267;
+    transition: 1s;
+}
+
+.contact-page textarea {
+    height: 70px;
+    margin-top: 6px;
+    width: 400px;
+}
+
+.contact-page button {
+    background-color: lightgrey ;
+}
+
+.contact-page button:hover {
+    background: #B55267;
+}

@@ -7,7 +7,7 @@ function Home() {
     <div className="home-page">
       <div className="banner">
         <h1>
-          Hi, my name is<a style={{ color: "#957397" }}> Anthony Streett</a>.
+          Hi, my name is<a style={{ color: "#B55267" }}> Anthony Streett</a>.
         </h1>
 
         <div className="typical">
@@ -16,9 +16,9 @@ function Home() {
             wrapper="b"
             steps={[
               "I'm a Full Stack Software Engineer.",
-              800,
+              1000,
               "who pays close attention to detail...",
-              400,
+              1000,
               "and pushes his boundaries!",
               1000,
             ]}

@@ -1,0 +1,22 @@
+.drawer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.drawer-links a {
+    text-align: center;
+    padding-top: 60px;
+    text-decoration: none;
+    color: grey;
+    font-family: "Changa";
+    font-size: 1.7rem;
+}
+
+.drawer-links a:hover {
+    color: #B55267;;
+}
+
+.drawer-links a:active {
+    color: limegreen;
+}
