@@ -31,7 +31,7 @@ function MaterialHeader() {
     const classes = useStyles();
 
     return (
-        <div>
+        <div className="header-style">
             <AppBar position="static" color="inherit">
                 <Toolbar>
                     <CoolDrawer/>
