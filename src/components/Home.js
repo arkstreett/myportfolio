@@ -12,7 +12,7 @@ function Home() {
 
         <div className="typical">
           <Typical
-            loop={Infinity}
+            loop={1}
             wrapper="b"
             steps={[
               "I'm a Full Stack Software Engineer.",
