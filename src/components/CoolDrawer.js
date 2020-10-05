@@ -11,6 +11,7 @@ import PrintIcon from '@material-ui/icons/Print';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import MailIcon from '@material-ui/icons/Mail';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 
@@ -71,7 +72,14 @@ function CoolDrawer() {
           <MailIcon style={{ marginRight: "10px"}}/>
           <a>Get In Touch </a>
         </Link>
+
+        <Link className="get-to-know" to="/login">
+          <a>Get to know me</a>
+          <FavoriteIcon style={{ marginRight: "10px"}}/>
+        </Link>
         </div>
+
+        
       </List>
     </div>
   );

@@ -10,6 +10,7 @@ import Resume from "./components/Resume"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import MaterialHeader from "./components/MaterialHeader";
+import LoginPage from "./components/LoginPage"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
                   <Route path="/resume" component={Resume}/>
                   <Route path="/projects" component={Projects} />
                   <Route path="/contact" component={Contact} />
+                  <Route path="/login" component={LoginPage} />
                 </Switch>
               </Paper>
               </ThemeProvider>

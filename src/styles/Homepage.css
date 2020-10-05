@@ -1,5 +1,6 @@
 .home-page {
   height: 100vh;
+  
 }
 
 .banner {
@@ -16,6 +17,24 @@
   margin-top: 10px;
   font-family: "Changa", sans-serif;
   font-size: 1.4rem;
+}
+
+.home-icons {
+  display: flex;
+  width: 80px;
+  margin-top: 20px;
+  justify-content: space-between;
+
+}
+
+.home-icons a {
+  transition: .5s;
+  color: black;
+}
+
+.home-icons a:hover {
+    color: #B55267;
+    transition: .5s;
 }
 
 @media (max-width: 500px) {

@@ -6,7 +6,7 @@
 
 .drawer-links a {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
     text-decoration: none;
     color: grey;
     font-family: "Changa";
@@ -19,4 +19,17 @@
 
 .drawer-links a:active {
     color: limegreen;
+}
+
+.get-to-know {
+    margin-top: 610px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 400px) {
+    .get-to-know {
+        margin-top: 340px;
+    }
 }
